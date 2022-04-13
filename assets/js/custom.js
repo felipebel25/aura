@@ -109,7 +109,7 @@ $(function() {
         }       
         $('html,body').animate({
           scrollTop: (target.offset().top) + 1
-        }, 700);
+        }, 200);
         return false;
       }
     }

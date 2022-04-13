@@ -108,8 +108,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #fff;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
+
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -191,26 +190,7 @@ body {
   padding-top: 0%;
   flex-direction: column;
 }
-.clients__phone{
-  position: relative;
-  width: 348px;
-  margin-right: auto;
-  margin-bottom: 4rem;
-  margin-left: auto;
-  bottom: 50rem;
-  left: 15rem;
-}
-.clients__phone img{
-  position: absolute;
-  left: -26%;
-  top: -6.5%;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  width: 890px;
-  height: auto;
-  max-width: 880px;
-}
+
 .clients__texto p {
   color: #6e6b78;
 }
@@ -291,7 +271,7 @@ body {
   color: #5532c8;
   position: relative;
   left:99%;
-  bottom: 20vh;
+  bottom: 13vh;
 }
 
 .text-button a i {
@@ -741,7 +721,7 @@ header
   .header-area .main-nav .logo {
     color: #1e1e1e;
     display: flex;
-    width: 20%;
+    width: 26%;
     padding-top: 1rem;
   }
   .header-area.header-sticky .nav li a:hover,
@@ -1027,8 +1007,11 @@ Banner Style
   padding-left: 2rem;
 }
 .banderas img{
-width: 4rem;
-padding: 0.1rem;
+width: 3rem;
+max-width: 3rem;
+min-width: 3rem;
+height: 2rem;
+margin: 0.2rem;
 }
 
 /* 
@@ -1293,7 +1276,11 @@ The Clients
 .the-clients {
   margin-top: 130px;
   height: 43rem;
-  padding: 0 10%;
+  padding-left:0;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
 
 }
 .clients__button{
@@ -1314,32 +1301,24 @@ The Clients
 }
 .clients__texto{
   height: 100%;
-  width: 49%;
+  width: 50%;
   display: flex;
   align-items: left;
   padding-top: 10%;
-  padding-left: 10%;
   flex-direction: column;
+  z-index: 5;
+  position: relative;
+  z-index: 1;
 }
 .clients__phone{
-  position: relative;
-  width: 348px;
-  margin-right: auto;
-  margin-bottom: 4rem;
-  margin-left: auto;
+  width: 50%;
   bottom: 50rem;
-  left: 15rem;
+  margin-left: 20%;
 }
 .clients__phone img{
-  position: absolute;
-  left: -26%;
-  top: -6.5%;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  width: 890px;
+  width: 350px;
   height: auto;
-  max-width: 880px;
+  max-width: 350px;
 }
 .clients__texto p {
   color: #6e6b78;
@@ -1479,6 +1458,213 @@ The Clients
 }
 
 
+/* 
+
+
+financial
+
+*/
+
+.financial{
+  width: 100%;
+  margin: 0 auto;
+  height:300rem;
+  background-color: #f5f5f7;
+  padding-top: 3rem;
+
+}
+.financial p{
+  font-weight: 500;
+  color: #6e6b78;
+}
+.financial__image{
+  background-image: url(../images/Group\ 34.png);
+  width: 100%;
+  height: 77%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.financial__container{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  height: 36rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+.financial__section2{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+  height: 37rem;
+  border-radius: 2rem;
+  display: flex;
+  margin-top: 10rem;
+}
+.financial__ahorro{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  background-color: white;
+  height: 37rem;
+  border-radius: 2rem;
+  display: flex;
+  margin-top: 10rem;
+}
+.financial__ahorro--image{
+  width: 72rem;
+  margin-left: 1.2rem;
+display: flex;
+align-items: flex-end;
+}
+.financial__ahorro--texto{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.financial__title{
+width: 40%;
+padding-left: 2rem;
+padding-top: 2rem;
+margin-bottom: 2rem;
+}
+  .financial__morado{
+    padding: 2rem;
+    width: 40%;
+    margin-right: 2%;
+  background-color: #9077e5;
+    border-radius: 2rem;
+    height: 100%;
+  }
+  .financial__morado h1{
+    margin-bottom: 5rem;
+    color: white;
+    font-weight: bold;
+  }
+.financial__white{
+   width: 60%;
+   background-color: white;
+   border-radius: 2rem;
+}
+.financial__white h1{
+  width: 50%;
+  padding: 2rem;
+  z-index: 10;
+  position: relative;
+}
+.financial__white img{
+  position: relative;
+  bottom: 12.7rem;
+  left: 18%;
+  z-index: 0;
+  width: 80%;
+}
+.financial--titulos{
+
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.financial__notices{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.financial__notices--box{
+    height: 100%;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+    padding-top: 1rem;
+}
+.financial__consejos{
+  width: 90%;
+  max-width: 1100px;
+  height: 30rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.financial__consejos--box{
+  background-color: white;
+border-radius: 2rem;
+  height: 100%;
+  max-height: 100%;
+  width: 33%;
+  padding: 2rem;
+}
+.financial__consejos--box h1{
+  font-size: 28px;
+  height: 25%;
+  margin-bottom: 2rem;
+}
+.consejos__images{
+  width: 23%;
+  margin-bottom: 5rem;
+}
+.container--titulos{
+  width: 99%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.financial__consejos2{
+ 
+  width: 90%;
+  max-width: 1100px;
+  height: 24rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.consejos2--card{
+  height: 100%;
+  margin: 0.2rem;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.financial__app{
+  width: 90%;
+  background-color: white;
+padding-left: 1rem;
+border-radius: 2rem;
+  margin: 0 auto;
+  height: 33rem;
+  max-width: 1100px;
+  display: flex;
+}
+.financial__app--texto{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.financial__app--image{
+width: 50%;
+display: flex;
+
+align-items: flex-end;
+
+}
 /* 
 ---------------------------------------------
 The Clients
@@ -1737,7 +1923,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/Group\ 45.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2142,15 +2328,103 @@ responsive
   .the-clients{
     padding-left: 0%;
   }
+  .financial{
+    height: 450rem;
+  }
+  .financial__container{
+    width: 90%;
+  }
+  .fa-arrow-right{
+    display: none;
+  }
+  .financial__app{
+    margin-top: 60rem;
+  }
+  .financial__app--image{
+    display: flex;
+    align-items: flex-end;
+  }
+  .financial__section2{
+    width: 90%;
+    height: 75rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  .financial__morado{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 2rem;
+    
+  }
+  .financial__ahorro{
+    width: 90%;
+    margin-top: 4rem;
+    height: auto;
+  }
+ 
+  .financial__ahorro--texto{
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+  }
+  .financial__morado h1{
+    margin-bottom: 1rem;
+  }
+  .financial__morado img{
+    max-width: 26rem;
+    margin-left: 14%;
+  }
+  .financial__white{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 53%;
+    padding: 0 1.5rem;
+  }
+  .financial__white img{
+    position: static;
+    bottom: 12.7rem;
+    left: 18%;
+    z-index: 0;
+    width: 100%;
+    padding:  0 8rem;
+
+  }
+  .financial__white h1 {
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 0;
+  }
+  .financial__consejos{
+    flex-direction: column;
+    justify-content: unset;
+    align-items:flex-start;
+    height: 100rem;
+  }
+  .financial__consejos2{
+    flex-direction: column;
+    justify-content: unset;
+    align-items:flex-start;
+  }
+  .financial__consejos--box{
+    width: 100%;
+    height: 33rem;
+    margin-bottom: 1rem;
+  }
   .clients__texto{
     padding-left: 3%;
+    padding-right: 0;
+    width: 59%;
+  }
+  .clients__phone{
+    width: 50%;
+    bottom: 50rem;
+    margin-left: 2%;
   }
   .clients__phone img{
-  left: -66%;
-  width: 790px;
-  height: auto;
-  max-width: 780px;
-    padding-top: 6rem;
+    width: 350px;
+    height: auto;
+    max-width: 390px;
   }
   .header-area {
     background-color: #fff;
@@ -2256,35 +2530,147 @@ responsive
   form#contact {
     padding: 45px;
   }
+  .header-area .main-nav .nav{
+    right: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
   .header-area .main-nav .nav{
     right: 0;
   }
+  
+.financial__notices{
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+.financial__notices--box{
+  margin-bottom: 1rem;
+  background-color: white;
+}
+.financial__app{
+  margin-top: 40rem;
+
+  flex-direction: column;
+}
+.financial__app--texto{
+  width: 100%;
+}
+.financial__app--image{
+  width: 100%;
+}
+
+  .financial__ahorro{
+    margin-top: 10%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .financial{
+    width: 100%;
+    margin: 0 auto;
+    height:480rem;
+    background-color: #f5f5f7;
+    padding-top: 3rem;
+  
+  }
+  .financial__ahorro--image{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .financial__ahorro--image{
+  position: relative;
+  left: 3rem;
+  }
+
+  .financial__ahorro--texto{
+    margin: 0 ;
+    height: 4rem;
+    margin:1.2rem;
+      
+  }
+  .financial__section2{
+    width: 90%;
+    height: 55rem;
+    flex-wrap: wrap;
+  }
+  .financial__white h1{
+    width: 100%;
+  }
+  .financial__section2{
+    height: 60rem;
+    margin-bottom: 4rem;
+  }
+  .financial__white{
+  }
+  .financial__white img{
+    position: static;
+    bottom: 12.7rem;
+    left: 18%;
+    z-index: 0;
+    width: 100%;
+    padding:  0 1rem;
+  }
+  .financial__title{
+    width: 95%;
+  }
+  .financial__morado{
+    height:25rem ;
+  }
+  .financial__morado img{
+    width: 100%;
+    max-width: 30rem;
+    margin-left: 0;
+
+    padding: 0 2%;
+  }
+  .financial__image{
+  background-size: contain;
+  background-position: center;
+
+    background-image: url(../images/Group\ 38.png);
+  }
+  .financial__container{
+    height: 40rem;
+  }
+  .financial--titulos{
+     text-align: center;
+  }
   .the-clients{
     padding-left: 0%;
     height: 56rem;
     padding: 0 ;
+    display: block;
   }
   .clients__texto{
-
-    padding-left: 3%;
+    left: 0;
     position: relative;
     width: 100%;
     top: 30rem;
     height: 45%;
+    padding-right: 0;
   }
   .clients__phone img{
 
-  top: 17rem;
-  width: 490px;
-  height: auto;
-  max-width: 780px;
-    left: -89%;
-}
+    width: 240px;
+    height: auto;
+    max-width: 780px;
+  }
+  .clients__phone{
+    position: relative;
+    left: -26px;
+    z-index: 10;
+    top: -25rem;
+    margin: 0 auto;
+    height: 5rem;
+    
+  }
 .clients__button{
   width: 90%;
+  margin-top: 1rem;
+  height: 3.4rem;
 }
   .banderas{
     position: relative;
