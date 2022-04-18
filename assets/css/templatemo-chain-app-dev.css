@@ -1008,10 +1008,12 @@ Banner Style
   padding-left: 2rem;
 }
 .banderas img{
-width: 3rem;
-max-width: 3rem;
-min-width: 3rem;
-height: 2rem;
+width: 2rem;
+max-width: 2rem;
+min-width: 2rem;
+height: 1.3rem;
+min-height: 1.3rem;
+max-height: 1.3rem;
 margin: 0.2rem;
 }
 
@@ -1983,7 +1985,25 @@ footer #search button:hover {
   max-width: 96px;
   margin-bottom: 30px;
 }
+.footer-widget--social{
+  display: flex;
+  flex-direction: column;
+}
+.footer-widget--social {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer-widget--social button{
+  width:5rem;
+  margin: 2rem;
+  background: transparent;
+  border: none;
 
+}
 .footer-widget h4 {
   font-size: 20px;
   color: #fff;
@@ -2703,6 +2723,7 @@ responsive
     padding-top: 0px;
     text-align: center;
   }
+ 
   .footer-widget ul {
     display: block;
     width: 100%;
