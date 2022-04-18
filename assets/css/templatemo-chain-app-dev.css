@@ -84,6 +84,7 @@ html[xmlns] .clearfix {
 }
 .imagelogo{
   width: 5.5rem;
+  max-width: 4rem;
 }
 
 * html .clearfix {
